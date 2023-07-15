@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,100&family=Roboto+Mono:wght@400;500;600&display=swap");
+
+/* Body styles */
+
+body {
+    background: linear-gradient(to bottom, #8cd2bb, #c5e3de);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+.container{
+  margin: 0;
+    padding-left: 40px;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background: linear-gradient(to bottom, #04d08c, #c5e3de);
+}
+  /* Heading styles */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6699;
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ff3366;
+  }
+  
+  /* Link styles */
+  a {
+    color: #ff6699;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Navigation Bar */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 26px;
+  }
+  
+  .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff6699;
+  }
+  
+  /* App Background */
+  /* body, html {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  } */
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff3366;
+  }
+  
+  /* Table cells inside odd-numbered rows */
+  tr:nth-child(odd) td {
+    background-color: #f8f9fa;
+  }
+  
+  /* All Heading elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* All Anchor elements (HTML Links) */
+  a {
+    color: #ff6699;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff3366;
+  }
+  
+  /* Fieldset Legends */
+  legend {
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+/* 
+h1{
+  wertyuio
+}
+p{
+  drtyghujkl
+} */
