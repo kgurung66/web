@@ -79,10 +79,98 @@ function addStudent(studentData){
     return
   });
 }
+
+function updateStudent(studentData){
+  return new Promise(function (resolve, reject) {
+    if(studentData.length == 0){
+      reject("No result returned"); // Rejecting promise if error occours
+      return;
+    }
+    for(i=0; i < dataCollection.students.length; i++){
+      if(studentData.studentNum == dataCollection.students[i].studentNum){
+        dataCollection.students[i].firstName = studentData.firstName
+        dataCollection.students[i].lastName = studentData.lastName
+        dataCollection.students[i].email = studentData.email
+        dataCollection.students[i].addressStreet = studentData.addressStreet
+        dataCollection.students[i].addressCity = studentData.addressCity
+        dataCollection.students[i].addressProvince = studentData.addressProvince
+        dataCollection.students[i].TA = (typeof studentData.TA === 'undefined') ? false : true;
+        dataCollection.students[i].status = studentData.status
+        dataCollection.students[i].course = studentData.course
+      }
+    }
+    
+    resolve(studentData);
+    return
+  });
+}
+
+
+function getCourseById(id){
+  return new Promise(function (resolve, reject) {
+    allCoursesData = dataCollection.courses;
+    if(allCoursesData.length <= 0){
+      reject("No result returned"); // Rejecting promise if error occours
+      return;
+    }
+    for (let i = 0; i < allCoursesData.length; i++) {
+      if(allCoursesData[i].courseId == id){
+          resolve(allCoursesData[i]);
+          return;
+      }
+    }
+    reject("no results returned"); // Rejecting promise if error occours
+    return;
+  });
+}
+
+function getStudentByNum(num){
+  return new Promise(function (resolve, reject) {
+    studentData = dataCollection.students;
+    if(studentData.length <= 0){
+      reject("No result returned"); // Rejecting promise if error occours
+      return;
+    }
+    for (let i = 0; i < studentData.length; i++) {
+      if(studentData[i].studentNum == num){
+          resolve(studentData[i]);
+          return;
+      }
+    }
+    reject("no results returned"); // Rejecting promise if error occours
+    return;
+  });
+}
+
+function getStudentsByCourse(course){
+  return new Promise(function (resolve, reject) {
+    studentData = dataCollection.students;
+    studentArr = []
+    if(studentData.length <= 0){
+      reject("No result returned"); // Rejecting promise if error occours
+      return;
+    }
+    for (let i = 0; i < studentData.length; i++) {
+      if(studentData[i].course == course){
+        studentArr.push(studentData[i]);
+      }
+    }
+    if(studentArr.length == 0){
+      reject("No result returned"); // Rejecting promise if error occours
+      return;
+    }
+    resolve(studentArr);
+    return
+  });
+}
 module.exports = {
   initialize,
   getAllStudents,
   getTAs,
   getCourses,
   addStudent,
+  getCourseById,
+  updateStudent,
+  getStudentByNum,
+  getStudentsByCourse
 };
