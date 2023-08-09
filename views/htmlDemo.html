@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="../css/theme.css" >
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Student Name</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/addStudent">Add Student</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+					<h2>Tables Section</h2>
+					<table class="table">
+					  <caption>Table 1: Series Fan</caption>
+					  <thead>
+						<tr>
+						  <th rowspan="2">Age Group</th>
+						  <th colspan="2">Korean</th>
+						  <th colspan="2">English</th>
+						</tr>
+						<tr>
+						  <th>Male</th>
+						  <th>Female</th>
+						  <th>Male</th>
+						  <th>Female</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>10-15</td>
+						  <td>10</td>
+						  <td>15</td>
+						  <td>20</td>
+						  <td>10</td>
+						</tr>
+						<tr>
+						  <td>15-20</td>
+						  <td>10</td>
+						  <td>30</td>
+						  <td>30</td>
+						  <td>15</td>
+						</tr>
+						<tr>
+						  <td>20-30</td>
+						  <td>20</td>
+						  <td>20</td>
+						  <td>30</td>
+						  <td>30</td>
+						</tr>
+					  </tbody>
+					  <tfoot>
+						<tr>
+						  <td>Total</td>
+						  <td>40</td>
+						  <td>65</td>
+						  <td>80</td>
+						  <td>55</td>
+						</tr>
+					  </tfoot>
+					</table>
+					<table class="table">
+					  <caption>Table 2: Random</caption>
+					  <thead>
+						<tr>
+						  <th>Name</th>
+						  <th>Position</th>
+						  <th>Department</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>Kalpana</td>
+						  <td rowspan="2">Manager</td>
+						  <td>HR</td>
+						</tr>
+						<tr>
+						  <td>Ashish</td>
+						  <td>Sales</td>
+						</tr>
+						<tr>
+						  <td>Shree</td>
+						  <td>Developer</td>
+						  <td>IT</td>
+						</tr>
+					  </tbody>
+					</table>
+					<p> THis is Table Section</p>
+				
+					
+					<!-- List -->
+					<h2>Lists Section</h2>
+					<ul>
+					  <li>Nepal</li>
+					  <li>Canada</li>
+					  <li>Korea</li>
+					  <li>
+						Colors
+						<ol>
+						  <li>Peach</li>
+						  <li>Green</li>
+						  <li>Black</li>
+						</ol>
+					  </li>
+					  <li>Vacation</li>
+					</ul>
+					<p> This is list section</p>
+	
+				  <!-- images -->
+				  <h2>Images Section</h2>
+				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in Halfpipe">
+				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in Halfpipe">
+				  <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in Halfpipe">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Cat relaxing in the sun">
+					<p> This is Image section </p>
+
+					<h2>Audio Section</h2>
+					<audio controls>
+						<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.mp3" type="audio/mpeg">
+						<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+					<p>THis is Audio part</p>
+
+					<h2>Video Section</h2>
+					<video controls>
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.mp4" type="video/mp4">
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.ogg" type="video/ogg">
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.webm" type="video/webm">
+					  Your browser does not support the video element.
+					</video>
+					<p> This is Video part</p>
+					
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
